@@ -1,0 +1,46 @@
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    /* attach header to the top */
+    position: sticky;
+    top: 0;
+    /* keep the header on top of all content */
+    z-index: 100;
+    background-color: white;
+
+}
+
+/* Logo containter */
+.headerlogo {
+    height: 25px;
+    margin-left: 20px;
+}
+
+/* Input containter */
+.headerInput {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border: 1px solid lightgray;
+}
+.headerInputButton {
+    width: 50px !important;
+    background-color: #fafafa;
+    border-left: 1px solid lightgray;
+    color: gray;
+
+}
+.headerInput input {
+    /* takes up the entire width of input container */
+    flex: 1;
+    border: none;
+}
+
+/* Icon containter */
+.headerIcons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}

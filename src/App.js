@@ -1,24 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Recommend from "./components/Recommend/Recommend";
+import SearchPage from "./components/SearchPage/SearchPage";
+
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {/* Router determine what url loads what component */}
+      <Router>
+        <Header/>
+
+          <Switch>
+
+            <Route path="/search/:searchTerm">
+              <div className="appPage">
+                <Sidebar />
+                <SearchPage />
+              </div>
+              <h1>SearcgPage</h1>
+            </Route>
+
+            <Route path="/">
+              <div className="appPage">
+                <Sidebar />
+                <Recommend />
+              </div>
+            </Route>
+
+          </Switch>
+      </Router>
+
+      {/*
+      */}
+
     </div>
   );
 }
