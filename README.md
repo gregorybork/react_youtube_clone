@@ -10,13 +10,14 @@ This is a react app that uses React Router, Material UI, and Flexbox to recreate
 
 ## Demo
 
-![todolist_demo](https://user-images.githubusercontent.com/46305741/96386549-a2b8ad80-1150-11eb-8895-2c8fcf53de1c.gif)
-
-
+![Alt text](./public/youtube.gif?raw=true "Title")
 
 ## Technologies
 
 - React
+- React Router
+- Material UI
+- Flexbox
 - HTML
 - CSS
 - Javascript
