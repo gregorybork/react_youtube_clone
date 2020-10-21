@@ -2,7 +2,7 @@
 
 Clone of youtube.com using React
 
-### [View Live]( https://gregorybork.github.io/react_covid19_tracker/)
+### [View Live](https://gregorybork.github.io/react_youtube_clone/)
 
 ## Description
 
