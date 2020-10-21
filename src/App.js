@@ -22,7 +22,6 @@ function App() {
                 <Sidebar />
                 <SearchPage />
               </div>
-              <h1>SearcgPage</h1>
             </Route>
 
             <Route path="/">
